@@ -21,7 +21,10 @@ a {
   color: #2D2D2D;
   font-family: Yusei Magic;
   text-decoration: none;
+}
 
+a:hover {
+  color: #fec6c5;
 }
 
 .menu {
@@ -86,14 +89,14 @@ a {
 }
 
 body {
-    font-family: Georgia;
+    font-family: Yusei Magic;
     display: flex;
     flex-direction: column;
     min-height: 100%;
     color: #2D2D2D
   }
 
-  .header {
+.header {
     display: flex;
     padding-bottom: 15px;
     margin-top: 10px;
@@ -129,13 +132,28 @@ h1 {
   width: 30px;
 }
 
+.hover a {
+  color: #2D2D2D
+}
+
+#logo {
+  background-image: url(psfsmall.jpg);
+  background-size: contain;    
+  background-repeat: no-repeat;
+  width: 200px;
+  flex-shrink: 0;
+}
+
   </style></head>
 	<body>
     <div class="socials">
       <li><a href="http://www.instagram.com/poppysseedsfarm"><img src="instagramlink.png"></a></li>
       <li><a href="http://www.facebook.com/poppys.seeds"><img src="facebooklink.png"></a></li>
       <li><a href="mailto:poppys.seeds.farm@gmail.com"><img src="emaillink.png"></a></li></div>
-    <div class="header"><div><img src="psfsmall.jpg"></div>
+    <div class="header"><div id="logo">
+      <!-- <img src="psfsmall.jpg"> -->
+    </div>
+
     <div class="titlecontainer">
       <h1>skills for a sustainable lifestyle</h1>
     <ul class="menu">
@@ -184,12 +202,74 @@ h1 {
     <div class="homepage">
       <div class="blog">@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>hi</div>
 
-      <div class="sidebar"><form action="/emailpage.php"><img src="newslettertest.png"><input type="email" id="email" name="email">
-        <input type="submit">
-      </form></div>
-    </div>
+      <div class="sidebar">
+        <div class="aboutme">about me
+          <img src="aboutmepic.jpeg"></div>
+        <div class="aboutmedes"><b><i>Hi, I'm Sarah</i></b>, and I am a chicken tender, sourdough baker, and all-around homesteading enthusiast in California.<br>I made this blog to document my backyard farming journey and share some tips, tricks, recipes, and projects with anyone who may be interested.<br>Be sure to check out my Instagram and Facebook for more content, and subscribe to my weekly newsletter to get updates as they occur! Happy farming!</div>
+        <div class="newsletter">
+        <form action="https://poppysseedsfarm.us7.list-manage.com/subscribe/post?u=c043bed65c3121f9c7f7b87df&amp;id=57a455e980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c043bed65c3121f9c7f7b87df_57a455e980" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div></form></div>
+
+</div></div>
 
   <style>
+    .aboutmedes {
+      font-family: Yusei Magic;
+      font-size: 15px;
+      color: #4A4A4A;
+      text-align: center;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+
+    .aboutme {
+      font-family: Beth Ellen;
+      font-size: 50px;
+      color: #4A4A4A;
+      text-align: center;
+      margin-top: -15px;
+    }
+
+    .aboutme img {
+      width: 225px;
+      display: block;
+      margin: auto;
+      margin-top: -5px;
+    }
+
+    #mc-embedded-subscribe {
+      position: absolute;
+      top: 318px;
+      left: 35px;
+      width: 210px;
+      background-color: #fec6c5;
+      font-family: Yusei Magic;
+      font-weight: bold;
+      color: #4A4A4A;
+      height: 25px;
+      border-radius: 5px;
+      border-color: #4A4A4A;
+      cursor: pointer;
+    }
+
+    #mce-EMAIL {
+      position: absolute;
+      top: 275px;
+      left: 35px;
+      height: 35px;
+      width: 200px;
+      background-color: transparent;
+      border: none;
+      padding-left: 10px;
+      font-family: Yusei Magic;
+    }
+
     html {
       height: 100%;
     }
@@ -208,17 +288,21 @@ h1 {
     }
 
     .sidebar {
-      width: 275px;     
-    }
-
-    .sidebar img {
-      width: 275px;
+      width: 275px; 
     }
 
     form {
       width: 275px;
     }
 
-  </style>
+    .newsletter {
+      background-image: url(newslettertest.png);
+      background-size: contain;    
+      background-repeat: no-repeat;
+      height: 400px;
+      position: relative;
+    }
+
+</style>
 </body>
 </html>
