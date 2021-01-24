@@ -93,7 +93,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    color: #2D2D2D
+    color: #2D2D2D;
+    margin: 0;
   }
 
 .header {
@@ -119,7 +120,8 @@ h1 {
   display: flex;
   justify-content: flex-end;
   margin: 0px;
-  padding: 0px;
+  padding-right: 8px;
+  padding-top: 8px;
   border-bottom: 1px solid grey;
 }
 
@@ -200,11 +202,28 @@ h1 {
 
     </ul></div></div>
     <div class="homepage">
-      <div class="blog">@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>@:-) this is a guy<br>hi</div>
+
+      <div class="blog">
+        <div class="blogpost">
+          <a href="blogpost.html"><img src="quailtest.jpg"></a>
+          <h2><a href="blogpost.html">Raising Quails from Chicks to Adults</a></h2>
+        <div class="blogtext">Here is where the text will go, blah blah blah blah blah blah 
+          blah blah blah blahblah blah blah blah blahblah blah blah blah blahblah blah blah blah 
+          blahblah blah blah blah blahblah blah blah blah blah, probably up until a certain amount 
+          of characters and then you get the option to <a href="blogpost.html">Read More...</a></div></div>
+      
+        <div class="blogpost">
+          <a href="anotherpost.html"><img src="beetest.jpg"></a>
+          <h2><a href="anotherpost.html">Hive Inspections: What to Look For</a></h2>
+          <div class="blogtext">Here is where the text will go, blah blah blah blah blah blah 
+        blah blah blah blahblah blah blah blah blahblah blah blah blah blahblah blah blah blah 
+        blahblah blah blah blah blahblah blah blah blah blah, probably up until a certain amount 
+        of characters and then you get the option to <a href="anotherpost.html">Read More...</a></div></div>
+      </div>
 
       <div class="sidebar">
         <div class="aboutme">about me
-          <img src="aboutmepic.jpeg"></div>
+          <a href="aboutme.html"><img src="aboutmepic.jpeg"></a></div>
         <div class="aboutmedes"><b><i>Hi, I'm Sarah.</i></b>I'm a chicken tender, beekeeper, artist, sourdough baker, and all-around homesteading enthusiast.<br>Welcome, and happy homesteading!</div>
         <div class="newsletter">
         <form action="https://poppysseedsfarm.us7.list-manage.com/subscribe/post?u=c043bed65c3121f9c7f7b87df&amp;id=57a455e980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -216,6 +235,44 @@ h1 {
 </div></div>
 
   <style>
+    .blogpost {
+      overflow: auto;
+      margin-left: 8px;
+      margin-right: 10px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+
+    h2 {
+      margin-top: -5px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+
+    .blog a {
+      color: #fec6c5;
+    }
+
+    .blog a:hover {
+      color: #4A4A4A;
+    }
+
+    .blogtext {
+      margin-right: 15px;
+    }
+
+    .blog img {
+      float: left;
+      border: 2px solid #4A4A4A; 
+      margin-right: 10px;
+      width: 350px;
+      margin-left: 10px;
+    }
+
+    a img:hover {
+      opacity: 0.9;
+    }
+
     .aboutmedes {
       font-family: Yusei Magic;
       font-size: 15px;
