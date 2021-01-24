@@ -202,39 +202,42 @@ h1 {
         margin-left: 10px;
       }
       .h3 {
-        margin-left: 10px;
         padding-left: 10px;
-        text-align: center;
       }
       .mobilemenu {
         display: flex;
+        float: right;
         flex-direction: row;
-        align-items: center;
+        justify-items: right;
+        align-items: right;
         background-color: #Fae2de;
-        padding-left: 10px;
-        padding-right: 30px;
-        padding-bottom: -10px;
-        padding-bottom: -10px;
+        padding-left: 40px;
+        padding-right: 0px;
+        padding-bottom: -50px;
+        padding-top: 50px;
+        margin-top: 20px;
+        margin-left: 100px;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+      }
+      .hmobile {
+        list-style-type: none;
+        float: right;
+        flex-direction: row;
+        justify-items: right;
+        align-items: right;
+        margin-top: -50px;
+        margin-right: -100px;
+        padding-right: -100px;
       }
     }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   .mobilemenu {
     display: none;
     opacity: 0;
   }
-}
-
-.mobilemenu {
-  display: flex;
-  flex-direction: column;
-  background-color: #fec6c5
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  border-radius: 5px;
-  height: 20px;
-  width: 40px;
 }
 
   </style></head>
