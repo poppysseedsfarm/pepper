@@ -31,307 +31,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
   <style>
-
-a {
-  color: #2D2D2D;
-  font-family: Yusei Magic;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #2d2d2d;
-  text-shadow: 0 0 10px#f78e8c;
-}
-
-.menu {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu .hover {
-  background-color: #Fae2de;
-  margin: 12px;
-  padding: 10px;
-  width: 120px;
-  border-radius: 5px;
-  font-size: medium;
-  text-align: center;
-  font-family: Yusei Magic; 
-  font-size: 18px;
-}
-
-.hmenu {
-  display: none;
-  text-align: center;
-  margin: auto;
-  list-style-type: none;
-  padding: 0;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  background-color:#Fae2de;
-  border-style: solid;
-  border-color: #2D2D2D;
-  border-radius: 5px;
-  position: absolute;
-  left: 12px;
-  right: 12px;
-}
-
-.menu li:hover .hover {
-  background-color:#fec6c5;
-  text-shadow: 0 0 10px white;
-}
-
-.menu li:hover .hmenu {
-  display: block;
-}
-
-.arrow-up {
-  width: 10px; 
-  height: 10px; 
-  border-left: 1.5px solid #2D2D2D;
-  border-top: 1.5px solid #2D2D2D;
-  transform: rotate(45deg);
-  background-color: #Fae2de;
-  margin: auto;
-  margin-top: -12px;
-}
-
-body {
-    font-family: Yusei Magic;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    color: #2D2D2D;
-    margin: 0;
-  }
-
-.header {
-    display: flex;
-    padding-bottom: 15px;
-    margin-top: 10px;
-  }
-
-h1 {
-  font-size: 40px;
-  font-family: Satisfy;
-  padding-left: 20px;
-  margin: 0;
-  color: #4A4A4A;
-}
-
-.titlecontainer {
-  display: flex;
-  flex-direction: column;
-}
-
-.socials {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0px;
-  padding-right: 8px;
-  padding-top: 8px;
-  border-bottom: 1px solid grey;
-}
-
-.socials li {
-  list-style-type: none;
-  padding: 5px;
-}
-
-.socials img {
-  width: 30px;
-}
-
-.hover a {
-  color: #2D2D2D
-}
-
-#logo {
-  /* background-image: url(psflogo.jpg); */
-  background-size: contain;    
-  background-repeat: no-repeat;
-  width: 200px;
-  flex-shrink: 0;
-  background-position: 10px 0px;
-  margin-left: 20px;
-  margin-right: -20px;
-  margin-bottom: -10px;
-  padding-bottom: 0px;
-}
-
-#logo:hover {
-  opacity: 0.9;
-}
-
-@media only screen and (max-width: 600px) {
-      .titlecontainer {
-        display: none;
-      }
-      .socials {
-        align: right;
-      }
-      .homepage {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 0;
-      }
-      .sidebar {
-        height: 25%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-      }
-      .blogpost {
-        height: 25%;
-      }
-      .blogtext {
-        margin-left: 10px;
-      }
-      .h2 {
-        margin-left: 10px;
-      }
-      .h3 {
-        padding-left: 10px;
-      }
-      .mobilemenu {
-        display: flex;
-        float: right;
-        flex-direction: row;
-        justify-items: right;
-        align-items: right;
-        background-color: #Fae2de;
-        padding-right: 0px;
-        padding-bottom: -50px;
-        padding-top: 50px;
-        margin-top: 20px;
-        margin-left: 60px;
-        width: 120px;
-        height: 30px;
-        border-radius: 5px;
-      }
-      .hmobile {
-        list-style-type: none;
-        float: right;
-        flex-direction: row;
-        justify-items: right;
-        align-items: right;
-        margin-top: -50px;
-        margin-right: -100px;
-        padding-right: -100px;
-      }
+    .oldposts {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 30px;
+      font-size: 20pt;
+      background-color: white;
+      border-radius: 5px;
+      text-align: right;
+      padding-right: 10px;
+      border:  2px solid #Fae2de;
     }
 
-@media only screen and (min-width: 600px) {
-  .mobilemenu {
-    display: none;
-    opacity: 0;
-  }
-}
-
-  </style></head>
-	<body>
-    <div class="socials">
-      <li><a href="http://www.instagram.com/poppysseedsfarm"><img src="instagramlink.png"></a></li>
-      <li><a href="http://www.facebook.com/poppys.seeds"><img src="facebooklink.png"></a></li>
-      <li><a href="mailto:poppys.seeds.farm@gmail.com"><img src="emaillink.png"></a></li></div>
-    <div class="header"><div id="logo">
-      <a href="http://poppysseedsfarm.com/" title="return" id="psflogo"><img src="psflogo.jpg" width="135px"></a>
-    </div>
-
-    <div class="mobilemenu">
-      <ul class="hmobile">
-      <li>kjdks</li>
-      <li>sgfjs</li>
-      </ul></div>
-
-    <div class="titlecontainer">
-      <h1>skills for a sustainable lifestyle</h1>
-    <ul class="menu">
-      <li><div class="hover">Critters</div>
-        <ul class="hmenu">
-          <div class="arrow-up"></div>
-          <li><a href="quails.html">Quails</a>
-          <li><a href="chickens.html">Chickens</a>
-          <li><a href="turkeys.html">Turkeys</a></li>
-          <li><a href="bees.html">Bees</a></li>
-        </ul></li>
-      <li><div class="hover">Crafts</div>
-        <ul class="hmenu">
-          <div class="arrow-up"></div>
-          <li><a href="quilts.html">Quilting</a>
-          <li><a href="painting.html">Painting</a>
-          <li><a href="diy.html">DIY and Building</a></li>
-        </ul></li>
-      <li><div class="hover">Kitchen</div>
-        <ul class="hmenu">
-          <div class="arrow-up"></div>
-          <li><a href="baking.html">Baking</a>
-          <li><a href="ferments.html">Fermenting</a>
-          <li><a href="pickles.html">Pickling</a></li>
-          <li><a href="cooking.html">Cooking</a>
-        </ul></li>
-      <li><div class="hover">Plants</div>
-        <ul class="hmenu">
-          <div class="arrow-up"></div>
-          <li><a href="seeds.html">Seeds</a>
-          <li><a href="foodforest.html">Food Forest</a>
-          <li><a href="flowers.html">Cut Flowers</a></li>
-        </ul></li> 
-      <li><div class="hover">Sustainability</div>
-        <ul class="hmenu">
-          <div class="arrow-up"></div>
-          <li><a href="grubs.html">Soldierflies</a>
-          <li><a href="sustainableprojects.html">Home Projects</a></li>
-        </ul></li>
-      <li><div class="hover"><a href="shop.html">Shop</a></div>
-        </ul></li>
-
-  
-
-    </ul></div></div>
-    <div class="homepage">
-
-      <div class="blog">
-        <div class="blogpost">
-          <a href="blogpost.html"><img src="quailtest.jpg"></a>
-          <h2><a href="blogpost.html">Raising Quails from Chicks to Adults</a></h2>
-          <h3><a href="quails.html">QUAILS</a></h3>
-        <div class="blogtext"><p>Quails are some of the quickest and most rewarding birds you can raise on your homestead. Did you know that a quail grows from a chick to and adult in only...</p>
-          <footer><a href="blogpost.html">Read more ></a></footer></div></div>
-      
-        <div class="blogpost">
-          <a href="anotherpost.html"><img src="beetest.jpg"></a>
-          <h2><a href="anotherpost.html">Hive Inspections: What to Look For</a></h2>
-          <h3><a href="quails.html">BEES</a></h3>
-          <div class="blogtext"><p>Hive inspections are important for checking on the health of your bees. In different seasons, you will be looking for similar but different signs of bee health and...</p>
-            <footer><a href="anotherpost.html">Read more ></a></footer></div></div>
-      </div>
-
-      <div class="sidebar">
-        <div class="aboutme">about me
-          <a href="aboutme.html"><img src="aboutmepic.jpeg"></a></div>
-        <div class="aboutmedes"><b><i>Hi, I'm Sarah.</i></b>I'm a chicken tender, beekeeper, artist, sourdough baker, and all-around homesteading enthusiast.<br>Welcome, and happy homesteading!</div>
-        <div class="newsletter">
-        <form action="https://poppysseedsfarm.us7.list-manage.com/subscribe/post?u=c043bed65c3121f9c7f7b87df&amp;id=57a455e980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c043bed65c3121f9c7f7b87df_57a455e980" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div></form></div>
-
-</div></div>
-
-  <style>
     footer {
       font-weight: bold;
       text-align: right;
@@ -359,6 +70,7 @@ h1 {
 
     h3 {
       margin-top: -10px;
+      margin-left: 10px;
     }
 
     .blog a {
@@ -470,9 +182,308 @@ h1 {
       background-repeat: no-repeat;
       height: 400px;
       position: relative;
+      width: 275px;
+      margin: auto;
     }
 
-</style>
+a {
+  color: #2D2D2D;
+  font-family: Yusei Magic;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2d2d2d;
+  text-shadow: 0 0 10px white;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu .hover {
+  background-color: #Fae2de;
+  margin: 12px;
+  padding: 10px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  font-family: Yusei Magic; 
+  font-size: 18px;
+}
+
+.hmenu {
+  display: none;
+  text-align: center;
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color:#fec6c5;
+  /* border-style: solid; */
+  /* border-color: #2D2D2D; */
+  border-radius: 5px;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+
+}
+
+.menu li:hover .hover {
+  background-color:#fec6c5;
+  text-shadow: 0 0 10px white;
+}
+
+.menu li:hover .hmenu {
+  display: block;
+}
+
+.arrow-up {
+  width: 10px; 
+  height: 10px; 
+  /* border-left: 1.5px solid #2D2D2D;
+  border-top: 1.5px solid #2D2D2D; */
+  transform: rotate(45deg);
+  background-color:#fec6c5;
+  margin: auto;
+  margin-top: -10px;
+}
+
+body {
+    font-family: Yusei Magic;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: #2D2D2D;
+    margin: 0;
+  }
+
+.header {
+    display: flex;
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+
+h1 {
+  font-size: 40px;
+  font-family: Satisfy;
+  padding-left: 20px;
+  margin: 0;
+  color: #4A4A4A;
+}
+
+.titlecontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+  padding-right: 8px;
+  padding-top: 8px;
+  border-bottom: 1px solid grey;
+}
+
+.socials li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.socials img {
+  width: 30px;
+}
+
+.hover a {
+  color: #2D2D2D
+}
+
+#logo {
+  /* background-image: url(psflogo.jpg); */
+  background-size: contain;    
+  background-repeat: no-repeat;
+  width: 200px;
+  flex-shrink: 0;
+  background-position: 10px 0px;
+  margin-left: 20px;
+  margin-right: -20px;
+  margin-bottom: -10px;
+  padding-bottom: 0px;
+}
+
+#logo:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 600px) {
+      .titlecontainer {
+        display: none;
+      }
+      .socials {
+        align: right;
+      }
+      .homepage {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+      }
+      .sidebar {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0px;
+      }
+      .aboutmedes {
+        margin: 10px;
+        padding-bottom: 10px;
+      }
+      .blogtext {
+        margin-left: 10px;
+      }
+      .mobilemenu {
+        display: flex;
+        float: right;
+        flex-direction: row;
+        justify-items: right;
+        align-items: right;
+        background-color: #Fae2de;
+        padding-right: 0px;
+        padding-bottom: -50px;
+        padding-top: 50px;
+        margin-top: 20px;
+        margin-left: 60px;
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+      }
+      .hmobile {
+        list-style-type: none;
+        float: right;
+        flex-direction: row;
+        justify-items: right;
+        align-items: right;
+        margin-top: -50px;
+        margin-right: -100px;
+        padding-right: -100px;
+      }
+    .socials img {
+      width: 20px;
+      }
+    }
+
+@media only screen and (min-width: 600px) {
+  .mobilemenu {
+    display: none;
+    opacity: 0;
+  }
+}
+
+  </style></head>
+	<body>
+    <div class="socials">
+      <li><a href="http://www.instagram.com/poppysseedsfarm"><img src="instagramlink.png"></a></li>
+      <li><a href="http://www.facebook.com/poppys.seeds"><img src="facebooklink.png"></a></li>
+      <li><a href="mailto:poppys.seeds.farm@gmail.com"><img src="emaillink.png"></a></li></div>
+    <div class="header"><div id="logo">
+      <a href="http://poppysseedsfarm.com/" title="return" id="psflogo"><img src="psflogo.jpg" width="135px"></a>
+    </div>
+
+    <div class="mobilemenu">
+      <ul class="hmobile">
+      <li>kjdks</li>
+      <li>sgfjs</li>
+      </ul></div>
+
+    <div class="titlecontainer">
+      <h1>skills for a sustainable lifestyle</h1>
+    <ul class="menu">
+      <li><div class="hover">Critters</div>
+        <ul class="hmenu">
+          <div class="arrow-up"></div>
+          <li><a href="quails.html">Quails</a>
+          <li><a href="chickens.html">Chickens</a>
+          <li><a href="turkeys.html">Turkeys</a></li>
+          <li><a href="bees.html">Bees</a></li>
+        </ul></li>
+      <li><div class="hover">Crafts</div>
+        <ul class="hmenu">
+          <div class="arrow-up"></div>
+          <li><a href="quilts.html">Quilting</a>
+          <li><a href="painting.html">Painting</a>
+          <li><a href="diy.html">DIY and Building</a></li>
+        </ul></li>
+      <li><div class="hover">Kitchen</div>
+        <ul class="hmenu">
+          <div class="arrow-up"></div>
+          <li><a href="baking.html">Baking</a>
+          <li><a href="ferments.html">Fermenting</a>
+          <li><a href="pickles.html">Pickling</a></li>
+          <li><a href="cooking.html">Cooking</a>
+        </ul></li>
+      <li><div class="hover">Plants</div>
+        <ul class="hmenu">
+          <div class="arrow-up"></div>
+          <li><a href="seeds.html">Seeds</a>
+          <li><a href="foodforest.html">Food Forest</a>
+          <li><a href="flowers.html">Cut Flowers</a></li>
+        </ul></li> 
+      <li><div class="hover">Sustainability</div>
+        <ul class="hmenu">
+          <div class="arrow-up"></div>
+          <li><a href="grubs.html">Soldierflies</a>
+          <li><a href="sustainableprojects.html">Home Projects</a></li>
+        </ul></li>
+      <li><div class="hover"><a href="shop.html">Shop</a></div>
+        </ul></li>
+
+  
+
+    </ul></div></div>
+    <div class="homepage">
+
+      <div class="blog">
+        <div class="blogpost">
+          <a href="blogpost.html"><img src="quailtest.jpg"></a>
+          <h2><a href="blogpost.html">Raising Quails from Chicks to Adults</a></h2>
+          <h3><a href="quails.html">QUAILS</a></h3>
+        <div class="blogtext"><p>Quails are some of the quickest and most rewarding birds you can raise on your homestead. Did you know that a quail grows from a chick to and adult in only...</p>
+          <footer><a href="blogpost.html">Read more ></a></footer></div></div>
+      
+        <div class="blogpost">
+          <a href="anotherpost.html"><img src="beetest.jpg"></a>
+          <h2><a href="anotherpost.html">Hive Inspection Checklist</a></h2>
+          <h3><a href="quails.html">BEES</a></h3>
+          <div class="blogtext"><p>Hive inspections are important for checking on the health of your bees. In different seasons, you will be looking for similar but different signs of bee health and...</p>
+            <footer><a href="anotherpost.html">Read more ></a></footer></div></div>
+          
+          <div class="oldposts"><a href="bloglandingpage.html">Browse Older Posts</a></div>
+      </div>
+
+      <div class="sidebar">
+        <div class="aboutme">about me
+          <a href="aboutme.html"><img src="aboutmepic.jpeg"></a></div>
+        <div class="aboutmedes"><b><i>Hi, I'm Sarah.</i></b>I'm a chicken tender, beekeeper, artist, sourdough baker, and all-around homesteading enthusiast.<br>Welcome, and happy homesteading!</div>
+        <div class="newsletter">
+        <form action="https://poppysseedsfarm.us7.list-manage.com/subscribe/post?u=c043bed65c3121f9c7f7b87df&amp;id=57a455e980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c043bed65c3121f9c7f7b87df_57a455e980" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div></form></div>
+
+</div></div>
 </meta>
 </body>
 </html>
