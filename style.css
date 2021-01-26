@@ -11,11 +11,20 @@
   border:  2px solid #Fae2de;
 }
 
+.oldposts:hover {
+    background-color:#Fae2de;
+}
+
+.oldposts a {
+    display: block;
+}
+
 footer {
   font-weight: bold;
   text-align: right;
   font-size: 20px;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 p {
@@ -140,7 +149,7 @@ html {
   width: 275px; 
 }
 
-form {
+.sidebar form {
   width: 275px;
 }
 
@@ -294,6 +303,91 @@ padding-bottom: 0px;
 opacity: 0.9;
 }
 
+#popupcontainer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(75, 75, 75, 0.5);
+}
+#popupcontainer img {
+    width: 450px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.popup {
+    width: 450px;
+    height: 575px;
+    background-color: #fec6c5;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #2d2d2d46;
+    position: relative;
+    text-align: center;
+    font-family: Yusei Magic;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.exitpopup {
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    box-shadow: 0 0 5px #2d2d2d46;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+#popup-EMAIL {
+    font-family: Yusei Magic;
+    font-weight: bold;
+    font-size: 15px;
+    color: #4A4A4A;
+    /* border-color: #4A4A4A; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    width: 430px;
+  }
+  
+  #popup-subscribe-button {
+    background-color:  #fec6c5;
+    font-family: Yusei Magic;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0;
+    border: none;
+    width: 430px;
+    box-shadow: 2px 2px 5px #0e0d0d46;
+  }
+
+  #popup-subscribe-button:hover {
+    background-color:  #Fae2de;
+    font-size: 20px;
+    font-size: 20px;
+    box-shadow: 0 0 5px#0e0d0d46;
+  }
+
+  .exitpopup:hover {
+      color: grey;
+  }
+
 @media only screen and (max-width: 600px) {
   .titlecontainer {
     display: none;
@@ -358,6 +452,62 @@ opacity: 0.9;
   }
   .socials img {
   width: 20px;
+  }
+
+
+#popupcontainer img {
+    width: 350px;
+}
+.popup {
+    width: 350px;
+    height: 475px;
+    font-size: 20px;
+}
+.exitpopup {
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    top: -15px;
+    right: -15px;
+    font-size: 35px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+#popup-EMAIL {
+    font-family: Yusei Magic;
+    font-weight: bold;
+    font-size: 10px;
+    color: #4A4A4A;
+    /* border-color: #4A4A4A; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    width: 330px;
+  }
+  
+  #popup-subscribe-button {
+    background-color:  #fec6c5;
+    font-family: Yusei Magic;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0;
+    border: none;
+    width: 330px;
+    box-shadow: 2px 2px 5px #0e0d0d46;
+  }
+
+  #popup-subscribe-button:hover {
+    background-color:  #Fae2de;
+    font-size: 15px;
+    font-size: 15px;
+    box-shadow: 0 0 5px#0e0d0d46;
   }
 }
 
