@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+{% assign pagenumber=1 %}
+{% assign anyposts=false %}
+{% assign postcount=0 %}
+    
+{% for post in site.posts %}
+    {% unless post.tags contains page.tag or page.tag=="all" %}
+        {% continue %}
+    {% endunless %}
+
+    {% assign anyposts=true %}
+    {% if postcount==4 %}
+        {% assign postcount=0 %}
+        {% if pagenumber==1 %}
+            <div class="oldposts"><a href="javascript:showpage(2);hidepage(1);scrollTo(0,0);">Browse Older Posts</a></div>
+        {% else %}
+            {% assign previous=pagenumber | minus:1 %}
+            {% assign next=pagenumber | plus:1 %}
+            <div class="prevnext"><a href="javascript:showpage({{ previous }});hidepage({{ pagenumber }});scrollTo(0,0);">&lt; Previous</a> | 
+            <a href="javascript:showpage({{ next }});hidepage({{ pagenumber }});scrollTo(0,0);">Next &gt;</a></div>
+        {% endif %}
+        {% assign pagenumber=pagenumber | plus:1 %}</div>
+    {% endif %}
+
+    {% if postcount==0 %}
+        <div class="page" id="page{{ pagenumber }}">
+    {% endif %}
+
+    {% assign postcount=postcount | plus:1 %}
+
+
+        <div class="blogpost">
+            <a href="{{ post.url }}">
+                {% if pagenumber==1 %}
+                <img src="/{{ post.img }}">
+
+                {% else %}
+                <img data-src="/{{ post.img }}">
+                {% endif %}
+            </a>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h3><a href="/tags/{{ site.data.tags[post.category] }}">{{ post.category | upcase }}</a></h3>
+          <div class="blogtext">{{ post.excerpt }}
+            <footer><a href="{{ post.url }}">Read more ></a></footer></div></div>
+            
+{% endfor %}
+    {% if anyposts %}
+        {% unless pagenumber==1 %}
+            {% assign previous=pagenumber | minus:1 %}
+            <div class="prevnext"><a href="javascript:showpage({{ previous }});hidepage({{ pagenumber }});scrollTo(0,0);">&lt; Previous</a></div>
+        {% endunless %}</div>
+    {% else %}
+        <div class="noposts">There's nothing here yet...</div>
+    {% endif %}
+

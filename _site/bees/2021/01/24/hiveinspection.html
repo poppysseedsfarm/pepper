@@ -30,7 +30,7 @@
       <li><a href="http://www.facebook.com/poppys.seeds"><img src="/facebooklink.png"></a></li>
       <li><a href="mailto:poppys.seeds.farm@gmail.com"><img src="/emaillink.png"></a></li></div>
     <div class="header"><div id="logo">
-      <a href="http://poppysseedsfarm.com/" title="return" id="psflogo"><img src="/psflogo.jpg" width="135px"></a>
+      <a href="/" title="return" id="psflogo"><img src="/psflogo.jpg" width="135px"></a>
     </div>
 
     <div class="mobilemenu">
@@ -45,7 +45,8 @@
       </ul></div>
 
     <div class="titlecontainer">
-      <h1></h1>
+      
+      <h1>skills for a sustainable lifestyle</h1>
     <ul class="menu">
       <li><div class="hover">Critters</div>
         <ul class="hmenu">
@@ -91,8 +92,13 @@
     </ul></div></div>
     <div class="homepage">
 
-      <div class="blog">Hive inspections are important for checking on the health of your bees. In different seasons, you will be looking for similar but different signs of bee health and...
-      </div>
+      <div class="blog"><h4>Hive Inspection Checklist</h4>
+<h5>Posted in <a href="/tags/bees.html">BEES</a> on 01/24/21</h5>
+
+        <div class="blogpostimage"><img src="/beetest.jpg"></div>
+
+   <div class="blogposttext">Hive inspections are important for checking on the health of your bees. In different seasons, you will be looking for similar but different signs of bee health and...</div>
+      </p></div>
 
       <div class="sidebar">
         <div class="aboutme">about me
@@ -130,6 +136,19 @@
     document.getElementById('popupcontainer').style.display="flex";
   }
   
+  function showpage(pagenumber){
+    document.getElementById('page'+ pagenumber).style.display="block";
+    var images=document.querySelectorAll('#page' + pagenumber + ' img');
+    images.forEach(image => {
+      if(image.dataset.src){
+        image.src=image.dataset.src;
+      }
+    });
+  }
+
+  function hidepage(pagenumber){
+    document.getElementById('page'+ pagenumber).style.display="none";
+  }
 </script>
 
 </body>

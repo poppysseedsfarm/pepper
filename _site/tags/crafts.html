@@ -30,7 +30,7 @@
       <li><a href="http://www.facebook.com/poppys.seeds"><img src="/facebooklink.png"></a></li>
       <li><a href="mailto:poppys.seeds.farm@gmail.com"><img src="/emaillink.png"></a></li></div>
     <div class="header"><div id="logo">
-      <a href="http://poppysseedsfarm.com/" title="return" id="psflogo"><img src="/psflogo.jpg" width="135px"></a>
+      <a href="/" title="return" id="psflogo"><img src="/psflogo.jpg" width="135px"></a>
     </div>
 
     <div class="mobilemenu">
@@ -45,6 +45,7 @@
       </ul></div>
 
     <div class="titlecontainer">
+      
       <h1>the crafting corner</h1>
     <ul class="menu">
       <li><div class="hover">Critters</div>
@@ -92,7 +93,24 @@
     <div class="homepage">
 
       <div class="blog">
-      </div>
+
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        <div class="noposts">There's nothing here yet...</div>
+    
+
+
+      </p></div>
 
       <div class="sidebar">
         <div class="aboutme">about me
@@ -130,6 +148,19 @@
     document.getElementById('popupcontainer').style.display="flex";
   }
   
+  function showpage(pagenumber){
+    document.getElementById('page'+ pagenumber).style.display="block";
+    var images=document.querySelectorAll('#page' + pagenumber + ' img');
+    images.forEach(image => {
+      if(image.dataset.src){
+        image.src=image.dataset.src;
+      }
+    });
+  }
+
+  function hidepage(pagenumber){
+    document.getElementById('page'+ pagenumber).style.display="none";
+  }
 </script>
 
 </body>

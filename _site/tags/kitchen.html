@@ -30,7 +30,7 @@
       <li><a href="http://www.facebook.com/poppys.seeds"><img src="/facebooklink.png"></a></li>
       <li><a href="mailto:poppys.seeds.farm@gmail.com"><img src="/emaillink.png"></a></li></div>
     <div class="header"><div id="logo">
-      <a href="http://poppysseedsfarm.com/" title="return" id="psflogo"><img src="/psflogo.jpg" width="135px"></a>
+      <a href="/" title="return" id="psflogo"><img src="/psflogo.jpg" width="135px"></a>
     </div>
 
     <div class="mobilemenu">
@@ -45,6 +45,7 @@
       </ul></div>
 
     <div class="titlecontainer">
+      
       <h1>everything kitchen</h1>
     <ul class="menu">
       <li><div class="hover">Critters</div>
@@ -92,7 +93,52 @@
     <div class="homepage">
 
       <div class="blog">
-      </div>
+
+
+    
+
+    
+        
+    
+
+    
+    
+
+    
+        <div class="page" id="page1">
+    
+
+    
+
+
+        <div class="blogpost">
+            <a href="/bees/2021/01/25/cookwithhoney.html">
+                
+                <img src="/breadtest.jpg">
+
+                
+            </a>
+            <h2><a href="/bees/2021/01/25/cookwithhoney.html">Cooking with Honey</a></h2>
+            <h3><a href="/tags/bees.html">BEES</a></h3>
+          <div class="blogtext">Blah bluu bluuuupy 
+Blah bluu bluuuupy 
+Blah bluu bluuuupy 
+Blah bluu bluuuupy 
+Blah bluu bluuuupy 
+Blah bluu bluuuupy 
+            <footer><a href="/bees/2021/01/25/cookwithhoney.html">Read more ></a></footer></div></div>
+            
+
+    
+        
+    
+        
+    
+        </div>
+    
+
+
+      </p></div>
 
       <div class="sidebar">
         <div class="aboutme">about me
@@ -130,6 +176,19 @@
     document.getElementById('popupcontainer').style.display="flex";
   }
   
+  function showpage(pagenumber){
+    document.getElementById('page'+ pagenumber).style.display="block";
+    var images=document.querySelectorAll('#page' + pagenumber + ' img');
+    images.forEach(image => {
+      if(image.dataset.src){
+        image.src=image.dataset.src;
+      }
+    });
+  }
+
+  function hidepage(pagenumber){
+    document.getElementById('page'+ pagenumber).style.display="none";
+  }
 </script>
 
 </body>
