@@ -271,8 +271,6 @@ padding: 0;
 padding-bottom: 5px;
 padding-top: 5px;
 background-color:#fec6c5;
-/* border-style: solid; */
-/* border-color: #2D2D2D; */
 border-radius: 5px;
 position: absolute;
 left: 12px;
@@ -292,8 +290,6 @@ display: block;
 .arrow-up {
 width: 10px; 
 height: 10px; 
-/* border-left: 1.5px solid #2D2D2D;
-border-top: 1.5px solid #2D2D2D; */
 transform: rotate(45deg);
 background-color:#fec6c5;
 margin: auto;
@@ -575,9 +571,20 @@ opacity: 0.9;
   }
 }
 
+.gsc-search-button-v2 {
+    background-color: #fec6c5 !important;
+    border: 1px solid grey !important;
+}
+
 @media only screen and (min-width: 600px) {
 .mobilemenu {
 display: none;
 opacity: 0;
+}
+}
+
+@media only screen and (max-width: 1190px) {
+.menu {
+   
 }
 }
