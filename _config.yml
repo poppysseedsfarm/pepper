@@ -1,2 +1,6 @@
+title: Poppy's Seeds Farm
+description: A blog about homesteading, crafting, raising critters, and everything in between.
+url: "http://poppysseedsfarm.com"
+author: Sarah
 plugins:
   - jekyll-feed
