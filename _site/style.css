@@ -32,6 +32,11 @@
 
 .blogposttext b, .blogposttext i {
     font-family: Georgia;
+    background-color:#Fae2de;
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 5px;
 }
 
 h4 {
